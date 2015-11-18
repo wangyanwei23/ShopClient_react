@@ -4,6 +4,13 @@
 var React = require('react-native');
 var Swiper = require('react-native-swiper');
 var string = "888";
+var tupian1 = require('../img/tupian1');
+var tupian2 = require('../img/tupian2');
+var tupian3 = require('../img/tupian3');
+var tupian4 = require('../img/tupian4');
+var banner1 = require('../img/banner1');
+var putao = require('../img/putao');
+var jiu = require('../img/jiu');
 
 var {
     AppRegistry,
@@ -35,7 +42,7 @@ var Buttons = React.createClass({
                 <TouchableHighlight underlayColor={'#F5F5F5'} style={{flex: 1}}>
                     <View style={{flex: 1}}>
                         <View style={[styles.buttons_flex, {flex: 3}]}>
-                            <Image style={styles.buttons_icon} source={require("image!tupian4")}></Image>
+                            <Image style={styles.buttons_icon} source={tupian4}></Image>
                         </View>
                         <View style={[styles.buttons_flex, {flex: 1}]}>
                             <Text style={styles.buttons_text}>啤酒</Text>
@@ -46,7 +53,7 @@ var Buttons = React.createClass({
                 <TouchableHighlight underlayColor={'#F5F5F5'} style={{flex: 1}}>
                     <View style={{flex: 1}}>
                         <View style={[styles.buttons_flex, {flex: 3}]}>
-                            <Image style={styles.buttons_icon} source={require("image!tupian3")}></Image>
+                            <Image style={styles.buttons_icon} source={tupian3}></Image>
                         </View>
                         <View style={[styles.buttons_flex, {flex: 1}]}>
                             <Text style={styles.buttons_text}>白酒</Text>
@@ -57,7 +64,7 @@ var Buttons = React.createClass({
                 <TouchableHighlight underlayColor={'#F5F5F5'} style={{flex: 1}}>
                     <View style={{flex: 1}}>
                         <View style={[styles.buttons_flex, {flex: 3}]}>
-                            <Image style={styles.buttons_icon} source={require("image!tupian2")}></Image>
+                            <Image style={styles.buttons_icon} source={tupian2}></Image>
                         </View>
                         <View style={[styles.buttons_flex, {flex: 1}]}>
                             <Text style={styles.buttons_text}>红酒</Text>
@@ -68,7 +75,7 @@ var Buttons = React.createClass({
                 <TouchableHighlight underlayColor={'#F5F5F5'} style={{flex: 1}}>
                     <View style={{flex: 1}}>
                         <View style={[styles.buttons_flex, {flex: 3}]}>
-                            <Image style={styles.buttons_icon} source={require("image!tupian1")}></Image>
+                            <Image style={styles.buttons_icon} source={tupian1}></Image>
                         </View>
                         <View style={[styles.buttons_flex, {flex: 1}]}>
                             <Text style={styles.buttons_text}>洋酒</Text>

@@ -4,6 +4,11 @@ var Home = require('./app/page/Home');
 var Category = require('./app/page/Category');
 var Shopping = require('./app/page/Shopping');
 var Profile = require('./app/page/Profile');
+var zhuye = require('../img/zhuye');
+var fenlei = require('../img/fenlei');
+var gouwu = require('../img/gouwu');
+var geren = require('../img/geren');
+
 var {
     AppRegistry,
     StyleSheet,
@@ -41,7 +46,7 @@ var ShopClient_react = React.createClass({
         return (
                 <TabBarIOS>
                     <TabBarIOS.Item
-                        icon={require("image!zhuye")}
+                        icon={zhuye}
                         title="首页"
                         onPress={() => this.changeTab('home')}
                         selected={this.state.selectedTab === 'home'}
@@ -51,7 +56,7 @@ var ShopClient_react = React.createClass({
 
                     <TabBarIOS.Item
                         title="分类"
-                        icon={require("image!fenlei")}
+                        icon={fenlei}
                         onPress={() => this.changeTab('classify')}
                         selected={this.state.selectedTab === 'classify'}
                         >
@@ -60,7 +65,7 @@ var ShopClient_react = React.createClass({
 
                     <TabBarIOS.Item
                         title="购物车"
-                        icon={require("image!gouwu")}
+                        icon={gouwu}
                         onPress={() => this.changeTab('shop')}
                         selected={this.state.selectedTab === 'shop'}
                         >
@@ -69,7 +74,7 @@ var ShopClient_react = React.createClass({
 
                     <TabBarIOS.Item
                         title="个人中心"
-                        icon={require("image!geren")}
+                        icon={geren}
                         onPress={() => this.changeTab('profile')}
                         selected={this.state.selectedTab === 'profile'}
                         >
